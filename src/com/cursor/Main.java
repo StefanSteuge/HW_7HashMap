@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Main {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         LocalDate date = LocalDate.now();
         LocalDate date1 = LocalDate.of(2021, 12, 1);
         LocalDate date2 = LocalDate.of(2021, 12, 2);
@@ -19,7 +19,7 @@ public class Main {
         LocalDate date8 = LocalDate.of(2021, 12, 18);
         LocalDate date9 = LocalDate.of(2021, 12, 22);
         LocalDate date10 = LocalDate.of(2021, 12, 25);
-        LocalDate date11 = LocalDate.of(2022,1,1);
+        LocalDate date11 = LocalDate.of(2022, 1, 1);
 
 
         Map<LocalDate, String> book = new HashMap<>();
@@ -71,15 +71,11 @@ public class Main {
         System.out.println(book.values());
 
         System.out.println(book.get(date1));
-
-        if (book.containsValue(null))
-            System.out.println("Sorry, in this date not any book was taken");
-
-
+        if (book.get(date11) == null) {
+            System.out.println("Sorry, on this date not any book was taken");
+        }
     }
 }
-
-
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
