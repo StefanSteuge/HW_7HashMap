@@ -10,12 +10,12 @@ public class Main {
     public static void main(String[] args)  {
         LocalDate date = LocalDate.now();
         LocalDate date1 = LocalDate.of(2021, 12, 1);
-        LocalDate date2 = LocalDate.of(2021, 12, 3);
-        LocalDate date3 = LocalDate.of(2021, 12, 8);
-        LocalDate date4 = LocalDate.of(2021, 12, 10);
-        LocalDate date5 = LocalDate.of(2021, 12, 11);
-        LocalDate date6 = LocalDate.of(2021, 12, 15);
-        LocalDate date7 = LocalDate.of(2021, 12, 16);
+        LocalDate date2 = LocalDate.of(2021, 12, 2);
+        LocalDate date3 = LocalDate.of(2021, 12, 5);
+        LocalDate date4 = LocalDate.of(2021, 12, 7);
+        LocalDate date5 = LocalDate.of(2021, 12, 10);
+        LocalDate date6 = LocalDate.of(2021, 12, 12);
+        LocalDate date7 = LocalDate.of(2021, 12, 15);
         LocalDate date8 = LocalDate.of(2021, 12, 18);
         LocalDate date9 = LocalDate.of(2021, 12, 22);
         LocalDate date10 = LocalDate.of(2021, 12, 25);
@@ -70,8 +70,8 @@ public class Main {
         System.out.println();
         System.out.println(book.values());
 
-        //    String bookSearch = book.get(date11);
-        //  System.out.println(bookSearch);
+        System.out.println(book.get(date1));
+
         if (book.containsValue(null))
             System.out.println("Sorry, in this date not any book was taken");
 
