@@ -70,9 +70,10 @@ public class Main {
         System.out.println();
         System.out.println(book.values());
 
-        System.out.println(book.get(date1));
-        if (book.get(date11) == null) {
+        if (book.get(date2) == null) {
             System.out.println("Sorry, on this date not any book was taken");
+        }else {
+            System.out.println(book.get(date2));
         }
     }
 }
