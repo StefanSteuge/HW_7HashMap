@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -18,9 +17,8 @@ public class Main {
         LocalDate date7 = LocalDate.of(2021, 12, 15);
         LocalDate date8 = LocalDate.of(2021, 12, 18);
         LocalDate date9 = LocalDate.of(2021, 12, 22);
-        LocalDate date10 = LocalDate.of(2021, 12, 25);
-        LocalDate date11 = LocalDate.of(2022, 1, 1);
-
+        LocalDate date10 = LocalDate.of(2022, 2, 8);
+        LocalDate date11 = LocalDate.of(2022, 2, 10);
 
         Map<LocalDate, String> book = new HashMap<>();
         book.put(date1, """
@@ -64,15 +62,13 @@ public class Main {
                 Christian Clausen
                 """);
 
-
         System.out.println();
         System.out.println(book.keySet());
         System.out.println();
         System.out.println(book.values());
-
         if (book.get(date2) == null) {
             System.out.println("Sorry, on this date not any book was taken");
-        }else {
+        } else {
             System.out.println(book.get(date2));
         }
     }
